@@ -16,3 +16,7 @@ socket.addEventListener("close", (event) => {
 socket.addEventListener("error", (event) => {
   console.error("WebSocket error:", event);
 });
+
+function sendMessage(){
+  socket.send('Test');
+}
