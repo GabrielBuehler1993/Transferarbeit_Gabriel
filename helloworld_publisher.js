@@ -1,4 +1,16 @@
-var redis = require("redis");
-var publisher = redis.createClient();publisher.publish("notification", "{\"message\":\"Hello world from Asgardian!\"}", function(){
- process.exit(0);
+const redis = require("redis");
+const publisher = redis.createClient({
+    socket: {
+        host:"localhost",
+        port: 6379
+    }
+
 });
+const messagesent = "yooo Whaddup";
+(async function(){
+    await publisher.connect();
+    await publisher.publish("Channel-01", messagesent);
+    console.log("Yoo dini nochricht isch raus");
+    process.exit(0);
+})();
+
