@@ -44,7 +44,7 @@ const onClientMessage = (ws, message) => {
 // If a new message from the redis channel is received, the onRedisMessage function is called
 const onRedisMessage = (message) => {
   console.log("Message received: " + message);
-  //TODO!!!!!! Send the message to all connected clients
+  //TODO!!!!!! Send the message to all connected cliens (foreach loop)
 };
 
 // If a connection is closed, the onClose function is called
