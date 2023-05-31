@@ -18,5 +18,15 @@ socket.addEventListener("error", (event) => {
 });
 
 function sendMessage(){
-  socket.send('Test');
+  const message = document.getElementById("message").value;
+  socket.send(message);
+}
+function displayMessage(data){
+  const displaymessage = document.createElement("message").value;
+  let messageElement = document.createElement("p");
+  let messageData  = JSON.parse(data);
+  let username = messageData.username;
+  let message = messageData.message;
+  messageElement.textContent = username + ": " + message;
+  messagesDiv.appendChild
 }
