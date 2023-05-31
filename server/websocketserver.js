@@ -51,7 +51,7 @@ const onClientMessage = (ws, message) => {
 // If a new message from the redis channel is received, the onRedisMessage function is called
 const onRedisMessage = (message) => {
   console.log("Message received: " + message);
-  const messageObject = json.parse(message);
+  const messageObject = JSON.parse(message);
   usernames.push(messageObject.username);
   //TODO!!!!!! Send the message to all connected cliens (foreach loop)
  clients.forEach((client)=>{
