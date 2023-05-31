@@ -25,7 +25,7 @@ const initializeWebsocketServer = async (server) => {
   websocketServer.on("connection", onConnection);
   websocketServer.on("error", console.error);
   await subscriber.subscribe("newMessage", onRedisMessage);
-  await publisher.publish("newMessage", "Hello from Redis!");
+  //await publisher.publish("newMessage", "Hello from Redis!");
 };
 
 // If a new connection is established, the onConnection function is called
