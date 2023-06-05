@@ -1,16 +1,46 @@
 body {
     font-family: 'Roboto', sans-serif;
-  /*  background-image: url("./img/Grid.png");
+    background-image: url("./img/Grid.png");
     background-size: cover;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
 }
+h1 {
+    /*font-family: 'rocket_rinderregular';
+    src: url('rocket_rinder.woff2') format('woff2'),
+         url('rocket_rinder.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;*/
+    color: rgb(188, 2, 188);
+}
+
 .username{
     background-image: url("./img/Fields.png");
     width: 200px;
     height: 60px;
+    color:rgb(123, 3, 153);
 }
 .ui{
     background-image: url("./img/Chatbox.png");
     width: 409px;
     height: 255px;
+    color:rgb(123, 3, 153);
+    
+}
+div {
+    background-image: url("./img/Fields.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 60px;
+    color: white;
+    margin: 25px;
+}
+
+p{
+    font-family: 'rocket_rinderregular';
+    src: url('rocket_rinder.woff2') format('woff2'),
+         url('rocket_rinder.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    font-weight: bold;
 }
