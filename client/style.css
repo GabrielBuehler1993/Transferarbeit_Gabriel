@@ -1,6 +1,7 @@
-html{
-    height: 100%;
-}
+html {
+    --primary-color: rgb(88, 32, 126);
+    --primary-color-light: rgb(187, 28, 201);
+  }
 @font-face {
     font-family: 'rocket_rinderregular';
     src: url('rocket_rinder.woff2') format('woff2'),
@@ -8,76 +9,49 @@ html{
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-image: url("./img/Grid.png");
+    font-family: 'rocket_rinderregular';
+    color: white;
+    background-image: url("./Grid.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
-h1 {
-    font-family: "rocket_rinderregular";
-    font-weight: normal;
-    font-style: normal;
-    color: rgb(188, 2, 188);
-}
-#title{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-}
-
-#username{
-    background-image: url("./img/Fields.png");
-    width: 200px;
-    height: 60px;
-    margin: 0px;
-    color:white;
-}
-#ui{
-    min-height:100%;
-    display:flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
+  
+  /* Set the custom scrollbar for the whole web application */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color-light) transparent;
+  }
+  
+  /* For WebKit-based browsers (Chrome, Safari, etc.) */
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color-light);
+    border-radius: 4px;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primary-color);
+  }
+  
+  .shownmessage {
     background-image: url("./img/Chatbox.png");
-    width: 409px;
-    height: 255px;
-    color:rgb(123, 3, 153);
-    
-}
-/*div {
-    background-image: url("./img/Fields.png");
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 60px;
-    color: white;
-    margin: 25px;
-}*/
-
-p{
+  }
+  .button{
+    background-color: rgb(187, 28, 201);
+  }
+  .username{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    font-family: 'rocket_rinderregular';
-    src: url('rocket_rinder.woff2') format('woff2'),
-         url('rocket_rinder.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    color: white;
-    font-weight: bold;
-}
-
-/*#message{
-    min-height:100%;
-    display:flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    background-image: url("./img/Chatbox.png");
-    width: 100px;
-    height: 100px;
-    color:rgb(123, 3, 153);
-}*/
+    background-image:url("./Fields.png");
+    background-size:100%;
+    margin-right: 100px;
+  }
+
+ 
