@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: chat
-          image: gabrielbuehler/transferarbeit
+          image: gabrielbuehler/transferarbeit:latest
           resources:
             limits:
               cpu: "0.5"
