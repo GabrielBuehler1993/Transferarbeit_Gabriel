@@ -7,6 +7,7 @@ WORKDIR /app
 # Copy the package.json and package-lock.json files to the container
 COPY . .
 # Install the dependencies
+
 #RUN apt install Node.js
 RUN npm install
 
